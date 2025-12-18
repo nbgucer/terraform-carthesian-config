@@ -174,7 +174,7 @@ IOptions Pattern: Strongly-typed configuration access
 Based on the ServiceType configuration, different implementations are registered:
 
 
-
+```csharp
 switch (appConfig.ServiceType?.ToLower())
 {
     case "email":
@@ -184,6 +184,8 @@ switch (appConfig.ServiceType?.ToLower())
         builder.Services.AddSingleton<IMessageService, SmsMessageService>();
         break;
 }
+```
+
 3. Terraform Configuration Matrix
 Terraform creates all combinations of apps and environments:
 
