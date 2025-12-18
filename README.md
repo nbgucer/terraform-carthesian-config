@@ -22,7 +22,7 @@ This project demonstrates deploying a single Docker image to multiple Kubernetes
 
 ## Project Structure
 
-
+```
 terraform-aks-deployment/
 ├── terraform/              # Terraform configuration files
 │   ├── main.tf            # Main Terraform configuration
@@ -34,8 +34,9 @@ terraform-aks-deployment/
 ├── scripts/
 │   └── deploy.ps1         # PowerShell deployment script
 └── README.md
+```
 
-Configuration
+## Configuration
 1. Update Terraform Variables
 Edit terraform/terraform.tfvars with your Azure resource details:
 
